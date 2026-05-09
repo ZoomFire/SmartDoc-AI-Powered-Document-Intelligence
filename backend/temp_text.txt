@@ -1,0 +1,889 @@
+© Ramaiah University of Applied Sciences
+1
+Faculty of Engineering & Technology
+Course Title : Neural Networks and 
+Deep Learning 
+Course Code:AMD504A
+Course Teacher:
+Dr Boppuru Rudra Prathap
+boppururudraprathap.cs.et@msruas.ac.in
+© Ramaiah University of Applied Sciences
+2
+Faculty of Engineering & Technology
+Neural Networks and Deep Learning
+© Ramaiah University of Applied Sciences
+3
+Faculty of Engineering & Technology
+Why Neural Networks & Deep Learning?
+• Deep learning is currently an extremely
+active
+area
+of
+research
+and
+is
+the
+foundation for modern machine learning.
+• It allows for the modeling of complex tasks
+that traditional algorithms struggle with,
+such as image recognition and natural
+language processing.
+• Knowledge in this field is essential for roles
+in
+self-driving
+car
+development,
+healthcare
+AI,
+ChatGPT
+&
+NLP
+and
+automated fraud detection.
+© Ramaiah University of Applied Sciences
+4
+Faculty of Engineering & Technology
+Real-World Problem
+• How does Netflix recommend movies?
+• How does Google Translate work?
+• How does Face Unlock identify you?
+© Ramaiah University of Applied Sciences
+5
+Faculty of Engineering & Technology
+Unit Flow
+• NN → CNN → RNN → GAN → RL → Advanced AI
+• This course builds layer by layer understanding
+© Ramaiah University of Applied Sciences
+6
+Faculty of Engineering & Technology
+AI-ML-NN-DL Overview
+© Ramaiah University of Applied Sciences
+7
+Faculty of Engineering & Technology
+Why Neural Networks?
+• Traditional Machine Learning struggles with complex, non-linear data
+• Neural Networks can automatically learn patterns and features.
+© Ramaiah University of Applied Sciences
+8
+Faculty of Engineering & Technology
+Unit 1 - Introduction to Neural Networks
+• Fundamentals: Understanding the basic 
+structure: Input Layer, Hidden Layers, and 
+Output Layer.
+• Biological Inspiration: How mathematical 
+models mimic the way biological neurons 
+process signals.
+• Key Algorithms:
+– Activation Functions: Sigmoid, tanh, and ReLU.
+– Example: Decision boundaries
+– Training: Gradient Descent and Backpropagation 
+for adjusting network weights for Loss minimization
+• Regularization: Techniques like Dropout and 
+L1/L2 regularization to prevent overfitting.
+© Ramaiah University of Applied Sciences
+9
+Faculty of Engineering & Technology
+Unit 1: Introduction to Neural Networks
+•
+Introduction to the fundamentals of neural networks, historical background, and applications in
+various fields, understanding the basic structure and components of a neural network: input layer,
+hidden layers, and output layer, multi-layer perceptron (MLP), deep feedforward networks ,exploring
+different activation functions: sigmoid, tanh, ReLU, introduction to gradient descent and
+backpropagation algorithms for training neural networks, understanding weight initialization and its
+influence on network convergence and performance, exploring regularization techniques: dropout,
+L1/L2 regularization
+Neural network that identifies two 
+types of flowers: Orchid and Rose.
+© Ramaiah University of Applied Sciences
+10
+Faculty of Engineering & Technology
+Introduction Neural Networks
+• Neural networks are machine learning models that mimic the
+complex functions of the human brain.
+• These models consist of interconnected nodes or neurons that
+process data, learn patterns and enable tasks such as pattern
+recognition and decision-making.
+Used for:
+• Image recognition (e.g., facial recognition in smartphones).
+• Speech processing (e.g., virtual assistants like Siri or Alexa).
+• Predictive analytics (e.g., weather forecasting).
+© Ramaiah University of Applied Sciences
+11
+Faculty of Engineering & Technology
+Introduction Neural Networks
+• NNs learn relationship between cause and effect or
+organize large volumes of data into orderly and
+informative patterns.
+What is that?
+© Ramaiah University of Applied Sciences
+12
+Faculty of Engineering & Technology
+Neural networks to the rescue…
+• Neural
+paradigm
+network:
+information 
+inspired
+by
+biological
+processing 
+nervous
+systems, such as our brain
+• Structure: large number of highly interconnected 
+processing elements (neurons) working together
+• Like people, they learn from experience (by 
+example)
+© Ramaiah University of Applied Sciences
+13
+Faculty of Engineering & Technology
+Definition of ANN
+“Data 
+large
+processing system consisting of a 
+number
+of
+simple,
+interconnected
+processing
+highly 
+elements
+(artificial neurons) in an architecture inspired
+by the structure of the cerebral cortex of the
+brain”
+(Tsoukalas & Uhrig, 1997).
+© Ramaiah University of Applied Sciences
+14
+Faculty of Engineering & Technology
+Inspiration from Neurobiology
+Human Biological Neuron
+© Ramaiah University of Applied Sciences
+15
+Faculty of Engineering & Technology
+Biological Neural Networks
+Biological neuron
+© Ramaiah University of Applied Sciences
+16
+Faculty of Engineering & Technology
+Biological Neural Networks
+A biological neuron has
+three
+types
+of
+main
+components; dendrites,
+soma (or cell body) and
+axon.
+Dendrites 
+signals 
+neurons.
+receives
+other
+from
+The soma, sums the incoming signals.
+When
+sufficient input is received, the cell fires; that is it
+transmit a signal over its axon to other cells.
+© Ramaiah University of Applied Sciences
+17
+Faculty of Engineering & Technology
+Artificial Neurons
+ANN is an information processing system that has
+certain
+performance
+characteristics
+in
+common
+with biological nets.
+Several key features of the processing elements of
+ANN are suggested by the properties of biological
+neurons:
+1.
+The processing element receives many signals.
+2.
+Signals may be modified by a weight at the receiving
+synapse.
+3.
+The processing element sums the weighted inputs.
+4.
+Under
+appropriate
+circumstances
+(sufficient
+input),
+the 
+neuron transmits a single output.
+5.
+The output from a particular neuron may go to many other 
+neurons.
+© Ramaiah University of Applied Sciences
+18
+Faculty of Engineering & Technology
+An artificial neuro11n
+•
+From experience: 
+examples / training 
+data
+•
+Strength of connection 
+between the neurons 
+is stored as a weight-
+value for the specific
+connection.
+•
+Learning the solution 
+to a problem = 
+changing the 
+connection weights
+Aphysical neuron
+Artificial Neurons
+© Ramaiah University of Applied Sciences
+19
+Faculty of Engineering & Technology
+Artificial Neurons
+ANNs have been developed as generalizations of
+mathematical models of neural biology, based on
+the assumptions that:
+1.
+Information processing occurs at many simple elements 
+called neurons.
+2.
+Signals are passed between neurons over connection links.
+3.
+Each connection link has an associated weight, which, in 
+typical neural net, multiplies the signal transmitted.
+4.
+Each neuron applies an activation function to its net input 
+to determine its output signal.
+© Ramaiah University of Applied Sciences
+20
+Faculty of Engineering & Technology
+Four basic components of a human biological
+neuron
+The components of a basic artificial neuron
+Artificial Neuron
+© Ramaiah University of Applied Sciences
+21
+Faculty of Engineering & Technology
+Model Of A Neuron
+
+f()
+Y
+Wa
+Wb
+Wc
+Connection 
+weights
+Summing 
+function
+computation
+X1
+X3
+X2
+Input units
+(dendrite)
+(synapse)
+(axon)
+(soma)
+© Ramaiah University of Applied Sciences
+22
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+23
+Faculty of Engineering & Technology
+©M. S. Ramaiah University of Applied Sciences
+23
+• A neural net consists of a large number of simple processing
+elements called neurons, units, cells or nodes.
+• Each neuron is connected to other neurons by means of directed
+communication links, each with associated weight.
+• The weight represent information being used by the net to solve a
+problem.
+© Ramaiah University of Applied Sciences
+24
+Faculty of Engineering & Technology
+©M. S. Ramaiah University of Applied Sciences
+24
+•
+Each neuron has an internal state, called its activation or activity level, which is a function
+of the inputs it has received. Typically, a neuron sends its activation as a signal to several
+other neurons.
+•
+It is important to note that a neuron can send only one signal at a time, although that
+signal is broadcast to several other neurons.
+•
+Neural networks are configured for a specific application, such as pattern recognition or 
+data classification, through a learning process
+•
+In a biological system, learning involves adjustments to the synaptic connections
+between neurons
+same for artificial neural networks (ANNs)
+© Ramaiah University of Applied Sciences
+25
+Faculty of Engineering & Technology
+x2
+w1
+w2
+x1
+Dendrite
+-A neuron receives input, determines the strength or the weight of the input, calculates the total weighted
+input, and compares the total weighted with a value (threshold)
+-The value is in the range of 0 and 1
+- If the total weighted input greater than or equal the threshold value, the neuron will produce the output,
+and if the total weighted input less than the threshold value, no output will be produced
+Axon
+yin = x1w1 + x2w2
+Nukleus
+
+
+Activation Function:
+(y-in) = 1 if y-in >= 
+and (y-in) = 0
+y
+Synapse
+Artificial Neural Network
+© Ramaiah University of Applied Sciences
+26
+Faculty of Engineering & Technology
+• Neural networks are capable of learning and identifying patterns directly from
+data without pre-defined rules.
+These networks are built from several key components:
+•
+Neurons: The basic units that receive inputs, each neuron is governed by a threshold and an
+activation function.
+•
+Connections: Links between neurons that carry information, regulated by weights and biases.
+•
+Weights and Biases: These parameters determine the strength and influence of connections.
+•
+Propagation Functions: Mechanisms that help process and transfer data across layers of neurons.
+•
+Learning Rule: The method that adjusts weights and biases over time to improve accuracy.
+© Ramaiah University of Applied Sciences
+27
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+28
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+29
+Faculty of Engineering & Technology
+Applications of Artificial Neural Networks
+•
+Social Media: ANNs help social media platforms suggest friends and relevant content by analyzing user profiles,
+interests and interactions. They also assist in targeted advertising which ensures users to see ads tailored to
+their preferences.
+•
+Marketing and Sales: E-commerce sites like Amazon use ANNs to recommend products based on browsing
+history. They also personalize offers, predict customer behavior and segment customers for more effective
+marketing campaigns.
+•
+Healthcare: ANNs are used in medical imaging for detecting diseases like cancer and they assist in diagnosing
+conditions with accuracy similar to doctors. Additionally, they predict health risks and recommend personalized
+treatment plans.
+•
+Personal Assistants: Virtual assistants like Siri and Alexa use ANNs to process natural language, understand voice
+commands and respond accordingly. They help manage tasks like setting reminders helps in making calls and
+answering queries.
+•
+Customer Support: ANNs power chatbots and automated customer service systems that analyze customer
+queries and provide accurate responses helps in improving efficiency in handling customer inquiries.
+•
+Finance: In the financial industry, they are used for fraud detection, credit scoring and predicting market trends
+by analyzing large sets of transaction data and spotting anomalies.
+© Ramaiah University of Applied Sciences
+30
+Faculty of Engineering & Technology
+Challenges in Artificial Neural Networks
+•
+Data Dependency: ANNs require large amounts of high-quality data to train effectively. Gathering
+and cleaning sufficient data can be time-consuming, expensive and often impractical especially in
+industries with limited access to quality data.
+•
+Computational Power: Training deep neural networks with many layers, demands significant
+computational resources. High-performance hardware (e.g GPUs) is often required which makes it
+expensive and resource-intensive.
+•
+Overfitting: It can easily overfit to the training data which means they perform well on the training
+set but poorly on new, unseen data. This challenge arises when the model learns to memorize rather
+than generalize, reducing its real-world applicability.
+•
+Interpretability: They are often referred to as "black boxes." It is difficult to understand how they
+make decisions which is a problem in fields like healthcare and finance where explainability and
+transparency are important.
+•
+Training Time: Training ANNs can take a long time, especially for deep learning models with many
+layers and vast datasets. This lengthy training process can delay the deployment of models and
+hinder their use in time-sensitive applications.
+© Ramaiah University of Applied Sciences
+31
+Faculty of Engineering & Technology
+History
+•
+Neural networks evolved through cycles of rise, fall, and revival.
+•
+Neural networks have undergone significant evolution since their inception in the mid-20th century. Here’s a concise timeline of
+the major developments in the field:
+•
+1940s-1950s: The concept of neural networks began with McCulloch and Pitts’ introduction of the first mathematical model
+for artificial neurons. However, the lack of computational power during that time posed significant challenges to further
+advancements.
+•
+1960s-1970s: Frank Rosenblatt’s worked on perceptrons. Perceptrons are simple single-layer networks that can solve linearly
+separable problems, but cannot perform complex tasks.
+•
+1980s: The development of backpropagation by Rumelhart, Hinton, and Williams revolutionized neural networks by enabling the
+training of multi-layer networks. This period also saw the rise of connectionism, emphasizing learning through interconnected
+nodes.
+•
+1990s: Neural networks experienced a surge in popularity with applications across image recognition, finance, and more.
+However, this growth was tempered by a period known as the “AI winter,” during which high computational costs and unrealistic
+expectations dampened progress.
+•
+2000s: A resurgence was triggered by the availability of larger datasets, advances in computational power, and innovative network
+architectures. Deep learning, utilizing multiple layers, proved highly effective across various domains.
+•
+2010s: The landscape of machine learning has been dominated by deep learning with CNNs (Convolutional Neural Networks)
+excelling in image classification and RNNs (Recurrent Neural Networks) , LSTMs, and GRUs gaining traction in sequence-based
+tasks like language modeling and speech recognition.
+•
+2017: Transformer models, introduced by Vaswani et al. in “Attention is All You Need,” revolutionized NLP by using a self-attention
+mechanism for parallel processing, improving efficiency. Models like BERT, GPT, and T5 set new benchmarks in machine
+translation and text generation.
+© Ramaiah University of Applied Sciences
+32
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+33
+Faculty of Engineering & Technology
+Layers in Neural Network Architecture
+• Input Layer: This is where the network receives its
+input
+data.
+Each
+input
+neuron
+in
+the
+layer
+corresponds to a feature in the input data.
+• Hidden Layers: These layers perform most of the
+computational heavy lifting. A neural network can
+have one or multiple hidden layers. Each layer
+consists of units (neurons) that transform the inputs
+into something that the output layer can use.
+• Output Layer: The final layer produces the output of
+the model. The format of these outputs varies
+depending on the specific task (e.g., classification,
+regression).
+© Ramaiah University of Applied Sciences
+34
+Faculty of Engineering & Technology
+Working of Neural Networks
+Working of Neural Networks Mechanisms: 
+• Forward Propagation
+• Backpropagation
+• Iteration
+© Ramaiah University of Applied Sciences
+35
+Faculty of Engineering & Technology
+Forward Propagation
+• When data is input into the network, it passes through the
+network in the forward direction, from the input layer through
+the hidden layers to the output layer. This process is known as
+forward propagation.
+© Ramaiah University of Applied Sciences
+36
+Faculty of Engineering & Technology
+Forward Propagation
+Here’s what happens during this phase:
+1. Linear Transformation: Each neuron in a layer receives inputs which are multiplied by the weights
+associated with the connections. These products are summed together and a bias is added to the sum.
+This can be represented mathematically as:
+z=w1 x1 +w2 x2 +…+wn xn +b
+where
+•
+w represents the weights
+•
+x represents the inputs
+•
+b is the bias
+2. Activation: The result of the linear transformation (denoted as z) is then passed through an activation
+function. The activation function is crucial because it introduces non-linearity into the system,
+enabling the network to learn more complex patterns. Popular activation functions include ReLU,
+sigmoid and tanh.
+© Ramaiah University of Applied Sciences
+37
+Faculty of Engineering & Technology
+Backpropagation
+•
+Backpropagation, short for Backward Propagation of
+Errors, is a key algorithm used to train neural networks
+by minimizing the difference between predicted and
+actual outputs. It works by propagating errors backward
+through the network, using the chain rule of calculus to
+compute gradients and then iteratively updating the
+weights
+and
+biases.
+Combined
+with
+optimization
+techniques
+like
+gradient
+descent,
+backpropagation
+enables the model to reduce loss across epochs and
+effectively learn complex patterns from data.
+© Ramaiah University of Applied Sciences
+38
+Faculty of Engineering & Technology
+Backpropagation
+•
+After forward propagation, the network evaluates its performance using a loss function which
+measures the difference between the actual output and the predicted output. The goal of training
+is to minimize this loss. This is where backpropagation comes into play:
+•
+Loss Calculation: The network calculates the loss which provides a measure of error in the
+predictions. The loss function could vary; common choices are mean squared error for regression
+tasks or cross-entropy loss for classification.
+•
+Gradient Calculation: The network computes the gradients of the loss function with respect to each
+weight and bias in the network. This involves applying the chain rule of calculus to find out how
+much each part of the output error can be attributed to each weight and bias.
+•
+Weight Update: Once the gradients are calculated, the weights and biases are updated using an
+optimization algorithm like stochastic gradient descent (SGD). The weights are adjusted in the
+opposite direction of the gradient to minimize the loss. The size of the step taken in each update is
+determined by the learning rate.
+© Ramaiah University of Applied Sciences
+39
+Faculty of Engineering & Technology
+Iteration
+• This process of forward propagation, loss calculation, backpropagation
+and weight update is repeated for many iterations over the dataset.
+Over time, this iterative process reduces the loss and the network's
+predictions become more accurate.
+© Ramaiah University of Applied Sciences
+40
+Faculty of Engineering & Technology
+Example of Email Classification
+Email ID
+Email Content
+Sender
+Subject Line
+Label
+1
+"Get free gift cards now!"
+spam@example.com
+"Exclusive Offer"
+1
+To classify this email, we will create a feature vector based on the analysis of keywords such as 
+"free" "win" and "offer"
+The feature vector of the record can be presented as:
+•"free": Present (1)
+•"win": Absent (0)
+•"offer": Present (1)
+© Ramaiah University of Applied Sciences
+41
+Faculty of Engineering & Technology
+How Neurons Process Data in a Neural Network
+•
+In a neural network, input data is passed through multiple layers, including one or more hidden layers. Each neuron in
+these hidden layers performs several operations, transforming the input into a usable output.
+1. Input Layer: The input layer contains 3 nodes that indicates the presence of each keyword.
+2. Hidden Layer: The input vector is passed through the hidden layer. Each neuron in the hidden layer performs two primary
+operations: a weighted sum followed by an activation function.
+•
+Weights:
+•Neuron H1: [0.5,−0.2,0.3]
+•Neuron H2: [0.4,0.1,−0.5]
+•
+Input Vector: [1,0,1]
+•
+Weighted Sum Calculation
+•For H1: (1×0.5)+(0×−0.2)+(1×0.3)=0.5+0+0.3=0.8
+•For H2: (1×0.4)+(0×0.1)+(1×−0.5)=0.4+0−0.5=−0.1
+•
+Activation Function
+•
+Here we will use ReLu activation function:
+•H1 Output: ReLU(0.8)= 0.8
+•H2 Output: ReLu(-0.1) = 0
+© Ramaiah University of Applied Sciences
+42
+Faculty of Engineering & Technology
+3. Output Layer: The activated values from the hidden neurons are sent to the output neuron where 
+they are again processed using a weighted sum and an activation function.
+•
+Output Weights: [0.7, 0.2]
+•
+Input from Hidden Layer: [0.8, 0]
+•
+Weighted Sum: (0.8×0.7)+(0×0.2)=0.56+0=0.56
+•
+Activation (Sigmoid): σ(0.56)=11+e−0.56≈0.636σ(0.56)=1+e−0.561 ≈0.636
+4. Final Classification:
+•
+The output value of approximately 0.636 indicates the probability of the email being spam.
+•
+Since this value is greater than 0.5, the neural network classifies the email as spam (1).
+© Ramaiah University of Applied Sciences
+43
+Faculty of Engineering & Technology
+Activation Function
+•
+An activation function in a neural network is a mathematical function applied to the output of a
+neuron. It introduces non-linearity, enabling the model to learn and represent complex data
+patterns. Without it, even a deep neural network would behave like a simple linear regression
+model.
+•
+Activation functions decide whether a neuron should be activated based on the weighted sum of
+inputs and a bias term. They also make backpropagation possible by providing gradients for weight
+updates..
+© Ramaiah University of Applied Sciences
+44
+Faculty of Engineering & Technology
+Activation Function
+Activation functions are generally two types, These are
+• Linear or Identity Activation Function
+• Non-Linear Activation Function.
+• Generally, neural networks use non-linear activation functions.
+Why Non-Linearity is Important
+•
+Real-world data is rarely linearly separable.
+•
+Non-linear functions allow neural networks to form curved decision boundaries, making them
+capable of handling complex patterns (e.g., classifying apples vs. bananas under varying colors and
+shapes).
+•
+They ensure networks can model advanced problems like image recognition, NLP and speech
+processing.
+© Ramaiah University of Applied Sciences
+45
+Faculty of Engineering & Technology
+Linear Activation Function
+• Linear Activation Function resembles straight line define by 
+y=x. No matter how many layers the neural network 
+contains if they all use linear activation functions the output 
+is a linear combination of the input.
+• The range of the output spans from (−∞to +∞)(−∞to +∞).
+• Linear activation function is used at just one place i.e. 
+output layer.
+• Using linear activation across all layers makes the network's 
+ability to learn complex patterns limited.
+© Ramaiah University of Applied Sciences
+46
+Faculty of Engineering & Technology
+Sigmoid Activation Function
+© Ramaiah University of Applied Sciences
+47
+Faculty of Engineering & Technology
+Tanh Activation Function
+© Ramaiah University of Applied Sciences
+48
+Faculty of Engineering & Technology
+ReLU (Rectified Linear Unit) Function
+© Ramaiah University of Applied Sciences
+49
+Faculty of Engineering & Technology
+Sigmoid Vs ReLU
+© Ramaiah University of Applied Sciences
+50
+Faculty of Engineering & Technology
+Comparison of Activation functions
+Features
+Sigmoid
+tanh
+ReLU
+Range
+0 to 1
+-1 to 1
+0 to ∞∞
+Gradient 
+Issues
+Severe vanishing gradients 
+Moderate vanishing gradients
+No vanishing gradient for x>0x>0
+Computation 
+Cost
+Expensive (exponential)
+Expensive (exponential)
+Very cheap (max operation)
+Use Case
+Binary classification outputs
+Hidden layers zero-centered data
+Deep neural networks
+Pros
+Smooth, probabilistic output
+Better gradient flow than sigmoid
+Fast, efficient, avoids vanishing gradien
+Cons
+Not zero-centered, slow training
+Still saturates for large inputs
+Dying ReLU problem
+Output
+Always positive
+Symmetric around zero
+Sparse
+vanishing gradients: Gradients become extremely small, causing weights in early layers to stop updating, 
+leading to "dead" neurons.
+© Ramaiah University of Applied Sciences
+51
+Faculty of Engineering & Technology
+Gradient descent and Backpropagation 
+algorithms 
+• Backpropagation and gradient descent are fundamental algorithms used together to
+train neural networks by minimizing prediction error.
+• Backpropagation calculates the gradient of the loss function with respect to each
+weight using the chain rule, while gradient descent updates weights in the opposite
+direction of this gradient to minimize loss iteratively.
+• Gradient Descent (Optimization):It updates the network's weights and biases using 
+the gradients computed by backpropagation, aiming for a lower error in the next 
+iteration.
+• The update rule is 
+© Ramaiah University of Applied Sciences
+52
+Faculty of Engineering & Technology
+Working of Back Propagation Algorithm
+• The Back Propagation algorithm involves two 
+main steps: the Forward Pass and the Backward 
+Pass.
+1. Forward Pass
+•
+In forward pass the input data is fed into the input layer.
+•
+These inputs combined with their respective weights are passed
+to hidden layers.
+•
+For example in a network with two hidden layers (h1 and h2) the
+output from h1 serves as the input to h2.
+•
+Before applying an activation function, a bias is added to the
+weighted inputs.
+•
+Each hidden layer computes the weighted sum (`a`) of the inputs
+then applies an activation function like ReLU (Rectified Linear
+Unit) to obtain the output (`o`).
+•
+The output is passed to the next layer where an activation
+function such as softmax converts the weighted outputs into
+probabilities for classification.
+© Ramaiah University of Applied Sciences
+53
+Faculty of Engineering & Technology
+2. Backward Pass:
+In the backward pass the error (the difference between the predicted and actual
+output) is propagated back through the network to adjust the weights and biases. One
+common method for error calculation is the Mean Squared Error (MSE) given by:
+© Ramaiah University of Applied Sciences
+54
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+55
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+56
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+57
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+58
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+59
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+60
+Faculty of Engineering & Technology
+NN Simulators for practice
+• https://medium.com/@karna.sujan52/back-propagation-
+algorithm-numerical-solved-f60c6986b643
+• https://share.google/bLyCfaeSy7oxu3SGl
+• https://shorturl.at/PaTdR
+• https://developers.google.com/machine-learning/crash-
+course/neural-networks/nodes-hidden-layers
+• https://www.mladdict.com/neural-network-simulator
+• https://wandb.ai/mostafaibrahim17/ml-
+articles/reports/Decoding-Backpropagation-and-Its-Role-in-
+Neural-Network-Learning--Vmlldzo3MTY5MzM1
+© Ramaiah University of Applied Sciences
+61
+Faculty of Engineering & Technology
+Regularization Techniques in Neural Networks
+What is Regularization?
+• Regularization is a technique used in machine learning to prevent
+overfitting, which otherwise causes models to perform poorly on
+unseen data. By adding a penalty for complexity, regularization
+encourages simpler and more generalizable models.
+• Prevents overfitting: Adds constraints to the model to reduce the risk of
+memorizing noise in the training data.
+• Improves generalization: Encourages simpler models that perform
+better on new, unseen data.
+© Ramaiah University of Applied Sciences
+62
+Faculty of Engineering & Technology
+© Ramaiah University of Applied Sciences
+63
+Faculty of Engineering & Technology
+Types of Regularization
+• There are mainly 3 types of regularization techniques, each applying
+penalties in different ways to control model complexity and improve
+generalization.
+• 1. Lasso Regression
+• 2. Ridge Regression
+• 3. Elastic Net Regression
+© Ramaiah University of Applied Sciences
+64
+Faculty of Engineering & Technology
+1. Lasso Regression
+• A regression model which uses the L1 Regularization technique is called LASSO
+(Least Absolute Shrinkage and Selection Operator) regression. It adds the absolute
+value of magnitude of the coefficient as a penalty term to the loss function(L). This
+penalty can shrink some coefficients to zero which helps in selecting only the
+important features and ignoring the less important ones.
+© Ramaiah University of Applied Sciences
+65
+Faculty of Engineering & Technology
+Example
+© Ramaiah University of Applied Sciences
+66
+Faculty of Engineering & Technology
+2 Ridge Regression
+• Regression model that uses the L2 regularization technique is called Ridge
+regression. It adds the squared magnitude of the coefficient as a penalty term to the
+loss function(L). It handles multicollinearity by shrinking the coefficients of
+correlated features instead of eliminating them.
+© Ramaiah University of Applied Sciences
+67
+Faculty of Engineering & Technology
+Example
+© Ramaiah University of Applied Sciences
+68
+Faculty of Engineering & Technology
+3 Elastic Net Regression
+Elastic Net Regression is a combination of both L1 as well as L2 regularization. That
+shows that we add the absolute norm of the weights as well as the squared measure of
+the weights. With the help of an extra hyperparameter that controls the ratio of the L1
+and L2 regularization.
+© Ramaiah University of Applied Sciences
+69
+Faculty of Engineering & Technology
+Example
+© Ramaiah University of Applied Sciences
+70
+Faculty of Engineering & Technology
+Advantages Regularization
+• Prevents Overfitting: Regularization helps models focus on underlying patterns 
+instead of memorizing noise in the training data.
+• Enhances Performance: Prevents excessive weighting of outliers or irrelevant 
+features helps in improving overall model accuracy.
+• Stabilizes Models: Reduces sensitivity to minor data changes which ensures 
+consistency across different data subsets.
+• Prevents Complexity: Keeps model from becoming too complex which is important 
+for limited or noisy data.
+• Handles Multicollinearity: Reduces the magnitudes of correlated coefficients helps 
+in improving model stability.
+• Promotes Consistency: Ensures reliable performance across different datasets 
+which reduces the risk of large performance shifts.
